@@ -10,8 +10,9 @@ class Author
   end
 
   def posts
-    @posts
-  end
+    Post.all.select do |posts|
+      post.author == self
+    end
 
 
     def self.post_count
