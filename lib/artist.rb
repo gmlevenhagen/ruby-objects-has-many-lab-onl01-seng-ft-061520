@@ -21,6 +21,7 @@ class Artist
   def songs
     Song.all.select do |song|
       song.artist == self
+      @@song_count += 1
     end
   end
 
