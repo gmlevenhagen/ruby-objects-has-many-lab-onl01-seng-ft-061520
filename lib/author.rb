@@ -13,6 +13,7 @@ class Author
     Post.all.select do |post|
       post.author == self
     end
+  end
 
 
     def self.post_count
